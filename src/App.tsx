@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Sun, Moon, CheckCircle2, RefreshCw, Circle, ChevronRight, Heart, Atom } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 
 interface TimelineEvent {
   year: string;
@@ -322,6 +323,7 @@ export default function App() {
           </div>
         </footer>
       </div>
+      <Analytics />
     </div>
   );
 }
